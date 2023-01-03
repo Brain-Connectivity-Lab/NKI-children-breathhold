@@ -6,7 +6,7 @@ path = '/mnt/disk1/NKI_Development_Data/longitudinal/child/all-visits/';
 cd(path)
 
 % Load subject names to preprocess
-load('finalAllSubjID.mat')
+load('../data/finalAllSubjID.mat')
 
 % Specify session ('BAS1','FLU1', or 'FLU2')
 session = 'BAS1';
