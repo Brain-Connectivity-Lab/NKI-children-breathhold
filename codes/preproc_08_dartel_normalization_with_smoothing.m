@@ -71,3 +71,10 @@ matlabbatch{1}.spm.tools.dartel.mni_norm.preserve = 0;
 matlabbatch{1}.spm.tools.dartel.mni_norm.fwhm = [6 6 6]; % Smooths images
 
 spm_jobman('run',matlabbatch)
+
+
+%% Copy swr files into a separate folder (for GIFT-ICA later)
+
+for subji = 1:length(subj_list)
+    copyfile([path 'sub-' subj_list{subji} '/ses-' session '/func/prepro_breathhold/swrsub-' subj_list{subji} '_ses-' session '_task-BREATHHOLD_acq-1400_bold.nii'], [path 'BAS1FLU1FLU2_bh_swr/'])
+end
