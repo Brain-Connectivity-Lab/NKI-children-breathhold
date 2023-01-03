@@ -2,11 +2,11 @@
 % Realignment
 
 clc; clear
-path = '/mnt/disk1/NKI_Development_Data/longitudinal/child/all-visits/';
-cd(path)
+path = '/mnt/disk1/NKI_Development_Data/longitudinal/child/all-visits/'; % Specify where subjects' data are
 
 % Load subject names to preprocess
 load('../data/finalAllSubjID.mat')
+cd(path)
 
 % Specify session ('BAS1','FLU1', or 'FLU2')
 session = 'BAS1';
