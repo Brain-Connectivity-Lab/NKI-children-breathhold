@@ -532,7 +532,7 @@ df_all$ICnetworks <- ICnetworks
 df_all$ModelType <- ModelType
 
 
-# Create a barplot of the AIC scores
+# Create a barplot of the AIC scores (Figure 5 in manuscript)
 (AIC_bar <- ggplot(df_all, aes(x = ICnetworks , y = AIC, fill = ModelType))+
     geom_bar(position="dodge", stat="identity")+
     ylab("AIC Score")+
